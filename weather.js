@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   function currentWeather(city) {
     var queryUrl =
-      "http://api.openweathermap.org/data/2.5/weather?q=" +
+      "//api.openweathermap.org/data/2.5/weather?q=" +
       city +
       "&units=imperial&APPID=" +
       apiKey;
@@ -22,7 +22,7 @@ $(document).ready(function() {
       // Pull coordinates from the returned OBJ and pass coordinates into UV index API call
 
       var queryUrlUV =
-        "http://api.openweathermap.org/data/2.5/uvi?appid=" +
+        "//api.openweathermap.org/data/2.5/uvi?appid=" +
         apiKey +
         "&lat=" +
         response.coord.lat +
@@ -45,7 +45,7 @@ $(document).ready(function() {
 
   function fiveDayForecast(city) {
     var queryUrl5day =
-      "http://api.openweathermap.org/data/2.5/forecast?q=" +
+      "//api.openweathermap.org/data/2.5/forecast?q=" +
       city +
       "&units=imperial&appid=" +
       apiKey;
